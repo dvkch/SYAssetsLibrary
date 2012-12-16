@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F80C721F167A043500A9110A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80C721E167A043500A9110A /* UIKit.framework */; };
+		F80C7221167A043500A9110A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80C7220167A043500A9110A /* Foundation.framework */; };
+		F80C7223167A043500A9110A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80C7222167A043500A9110A /* CoreGraphics.framework */; };
+		F80C7229167A043500A9110A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F80C7227167A043500A9110A /* InfoPlist.strings */; };
+		F80C722B167A043500A9110A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F80C722A167A043500A9110A /* main.m */; };
+		F80C722F167A043500A9110A /* SYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F80C722E167A043500A9110A /* SYAppDelegate.m */; };
+		F80C7231167A043500A9110A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F80C7230167A043500A9110A /* Default.png */; };
+		F80C7233167A043500A9110A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80C7232167A043500A9110A /* Default@2x.png */; };
+		F80C7235167A043500A9110A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80C7234167A043500A9110A /* Default-568h@2x.png */; };
+		F80C723E167A043500A9110A /* SYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80C723D167A043500A9110A /* SYViewController.m */; };
+		F80C724B167A052300A9110A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80C724A167A052300A9110A /* Storyboard.storyboard */; };
+		F80C724E167A054D00A9110A /* SYAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F80C724D167A054D00A9110A /* SYAssetLibrary.m */; };
+		F80C7250167A063000A9110A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80C724F167A063000A9110A /* AssetsLibrary.framework */; };
+		F80C7253167A091E00A9110A /* SYAssetAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = F80C7252167A091E00A9110A /* SYAssetAlbum.m */; };
+		F8423EAE167A426A00927712 /* SYAssetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8423EAD167A426A00927712 /* SYAssetItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F80C721A167A043500A9110A /* SYAssetsLibraryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYAssetsLibraryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80C721E167A043500A9110A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F80C7220167A043500A9110A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F80C7222167A043500A9110A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F80C7226167A043500A9110A /* SYAssetsLibraryExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SYAssetsLibraryExample-Info.plist"; sourceTree = "<group>"; };
+		F80C7228167A043500A9110A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F80C722A167A043500A9110A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F80C722C167A043500A9110A /* SYAssetsLibraryExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SYAssetsLibraryExample-Prefix.pch"; sourceTree = "<group>"; };
+		F80C722D167A043500A9110A /* SYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAppDelegate.h; sourceTree = "<group>"; };
+		F80C722E167A043500A9110A /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
+		F80C7230167A043500A9110A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F80C7232167A043500A9110A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F80C7234167A043500A9110A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F80C723C167A043500A9110A /* SYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYViewController.h; sourceTree = "<group>"; };
+		F80C723D167A043500A9110A /* SYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYViewController.m; sourceTree = "<group>"; };
+		F80C724A167A052300A9110A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		F80C724C167A054D00A9110A /* SYAssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAssetLibrary.h; sourceTree = "<group>"; };
+		F80C724D167A054D00A9110A /* SYAssetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAssetLibrary.m; sourceTree = "<group>"; };
+		F80C724F167A063000A9110A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F80C7251167A091E00A9110A /* SYAssetAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAssetAlbum.h; sourceTree = "<group>"; };
+		F80C7252167A091E00A9110A /* SYAssetAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAssetAlbum.m; sourceTree = "<group>"; };
+		F8423EAC167A426A00927712 /* SYAssetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAssetItem.h; sourceTree = "<group>"; };
+		F8423EAD167A426A00927712 /* SYAssetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAssetItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F80C7217167A043500A9110A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80C7250167A063000A9110A /* AssetsLibrary.framework in Frameworks */,
+				F80C721F167A043500A9110A /* UIKit.framework in Frameworks */,
+				F80C7221167A043500A9110A /* Foundation.framework in Frameworks */,
+				F80C7223167A043500A9110A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F80C720F167A043500A9110A = {
+			isa = PBXGroup;
+			children = (
+				F80C724F167A063000A9110A /* AssetsLibrary.framework */,
+				F80C7224167A043500A9110A /* SYAssetsLibraryExample */,
+				F80C7248167A04CB00A9110A /* SYAssetsLibrary */,
+				F80C721D167A043500A9110A /* Frameworks */,
+				F80C721B167A043500A9110A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F80C721B167A043500A9110A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F80C721A167A043500A9110A /* SYAssetsLibraryExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F80C721D167A043500A9110A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80C721E167A043500A9110A /* UIKit.framework */,
+				F80C7220167A043500A9110A /* Foundation.framework */,
+				F80C7222167A043500A9110A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F80C7224167A043500A9110A /* SYAssetsLibraryExample */ = {
+			isa = PBXGroup;
+			children = (
+				F80C722D167A043500A9110A /* SYAppDelegate.h */,
+				F80C722E167A043500A9110A /* SYAppDelegate.m */,
+				F80C723C167A043500A9110A /* SYViewController.h */,
+				F80C723D167A043500A9110A /* SYViewController.m */,
+				F80C7225167A043500A9110A /* Supporting Files */,
+				F80C724A167A052300A9110A /* Storyboard.storyboard */,
+			);
+			path = SYAssetsLibraryExample;
+			sourceTree = "<group>";
+		};
+		F80C7225167A043500A9110A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F80C7226167A043500A9110A /* SYAssetsLibraryExample-Info.plist */,
+				F80C7227167A043500A9110A /* InfoPlist.strings */,
+				F80C722A167A043500A9110A /* main.m */,
+				F80C722C167A043500A9110A /* SYAssetsLibraryExample-Prefix.pch */,
+				F80C7230167A043500A9110A /* Default.png */,
+				F80C7232167A043500A9110A /* Default@2x.png */,
+				F80C7234167A043500A9110A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F80C7248167A04CB00A9110A /* SYAssetsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F80C724C167A054D00A9110A /* SYAssetLibrary.h */,
+				F80C724D167A054D00A9110A /* SYAssetLibrary.m */,
+				F80C7251167A091E00A9110A /* SYAssetAlbum.h */,
+				F80C7252167A091E00A9110A /* SYAssetAlbum.m */,
+				F8423EAC167A426A00927712 /* SYAssetItem.h */,
+				F8423EAD167A426A00927712 /* SYAssetItem.m */,
+			);
+			name = SYAssetsLibrary;
+			path = ../SYAssetsLibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F80C7219167A043500A9110A /* SYAssetsLibraryExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80C7241167A043500A9110A /* Build configuration list for PBXNativeTarget "SYAssetsLibraryExample" */;
+			buildPhases = (
+				F80C7216167A043500A9110A /* Sources */,
+				F80C7217167A043500A9110A /* Frameworks */,
+				F80C7218167A043500A9110A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYAssetsLibraryExample;
+			productName = SYAssetsLibraryExample;
+			productReference = F80C721A167A043500A9110A /* SYAssetsLibraryExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F80C7211167A043500A9110A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SY;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Syan;
+			};
+			buildConfigurationList = F80C7214167A043500A9110A /* Build configuration list for PBXProject "SYAssetsLibraryExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F80C720F167A043500A9110A;
+			productRefGroup = F80C721B167A043500A9110A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F80C7219167A043500A9110A /* SYAssetsLibraryExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F80C7218167A043500A9110A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80C7229167A043500A9110A /* InfoPlist.strings in Resources */,
+				F80C7231167A043500A9110A /* Default.png in Resources */,
+				F80C7233167A043500A9110A /* Default@2x.png in Resources */,
+				F80C7235167A043500A9110A /* Default-568h@2x.png in Resources */,
+				F80C724B167A052300A9110A /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F80C7216167A043500A9110A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80C722B167A043500A9110A /* main.m in Sources */,
+				F80C722F167A043500A9110A /* SYAppDelegate.m in Sources */,
+				F80C723E167A043500A9110A /* SYViewController.m in Sources */,
+				F80C724E167A054D00A9110A /* SYAssetLibrary.m in Sources */,
+				F80C7253167A091E00A9110A /* SYAssetAlbum.m in Sources */,
+				F8423EAE167A426A00927712 /* SYAssetItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F80C7227167A043500A9110A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F80C7228167A043500A9110A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F80C723F167A043500A9110A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F80C7240167A043500A9110A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F80C7242167A043500A9110A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SYAssetsLibraryExample/SYAssetsLibraryExample-Prefix.pch";
+				INFOPLIST_FILE = "SYAssetsLibraryExample/SYAssetsLibraryExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F80C7243167A043500A9110A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SYAssetsLibraryExample/SYAssetsLibraryExample-Prefix.pch";
+				INFOPLIST_FILE = "SYAssetsLibraryExample/SYAssetsLibraryExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F80C7214167A043500A9110A /* Build configuration list for PBXProject "SYAssetsLibraryExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80C723F167A043500A9110A /* Debug */,
+				F80C7240167A043500A9110A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80C7241167A043500A9110A /* Build configuration list for PBXNativeTarget "SYAssetsLibraryExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80C7242167A043500A9110A /* Debug */,
+				F80C7243167A043500A9110A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F80C7211167A043500A9110A /* Project object */;
+}
