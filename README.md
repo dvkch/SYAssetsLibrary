@@ -1,4 +1,4 @@
 SYAssetsLibrary
 ===============
 
-A higher level implementation of AssetsLibrary.
+A high level class for AssetsLibrary.
