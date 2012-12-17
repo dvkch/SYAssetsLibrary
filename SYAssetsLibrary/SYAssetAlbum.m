@@ -71,7 +71,8 @@
     dispatch_semaphore_t sema = dispatch_semaphore_create(0);
     [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         
-        SYAssetItem *item = [[SYAssetItem alloc] initWithURL:[[result defaultRepresentation] url] andAssetLibrary:self->_assetLibrary];
+        ALAsset *originalAsset = [result originalAsset] ? [result originalAsset] : result;
+        SYAssetItem *item = [[SYAssetItem alloc] initWithURL:[[originalAsset defaultRepresentation] url] andAssetLibrary:self->_assetLibrary];
         [items addObject:item];
         
         ++count;
