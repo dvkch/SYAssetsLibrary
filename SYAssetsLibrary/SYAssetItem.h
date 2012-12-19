@@ -16,6 +16,7 @@
 }
 
 -(SYAssetItem*)initWithURL:(NSURL*)url andAssetLibrary:(ALAssetsLibrary*)assetLibrary;
+-(SYAssetItem*)initWithAsset:(ALAsset*)asset andAssetLibrary:(ALAssetsLibrary*)assetLibrary;
 
 -(NSURL*)itemURL;
 -(ALAsset*)itemReference;

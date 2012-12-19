@@ -72,7 +72,7 @@
     [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         
         ALAsset *originalAsset = [result originalAsset] ? [result originalAsset] : result;
-        SYAssetItem *item = [[SYAssetItem alloc] initWithURL:[[originalAsset defaultRepresentation] url] andAssetLibrary:self->_assetLibrary];
+        SYAssetItem *item = [[SYAssetItem alloc] initWithAsset:originalAsset andAssetLibrary:self->_assetLibrary];
         [items addObject:item];
         
         ++count;

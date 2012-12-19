@@ -21,6 +21,17 @@
     return self;
 }
 
+-(SYAssetItem*)initWithAsset:(ALAsset*)asset andAssetLibrary:(ALAssetsLibrary*)assetLibrary
+{
+    if(self = [super init])
+    {
+        self->_url = [[asset defaultRepresentation] url];
+        self->_assetLibrary = assetLibrary;
+        self->_asset = asset;
+    }
+    return self;
+}
+
 -(NSURL*)itemURL
 {
     return self->_url;
