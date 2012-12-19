@@ -72,8 +72,11 @@
     [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         
         ALAsset *originalAsset = [result originalAsset] ? [result originalAsset] : result;
-        SYAssetItem *item = [[SYAssetItem alloc] initWithAsset:originalAsset andAssetLibrary:self->_assetLibrary];
-        [items addObject:item];
+        if(originalAsset)
+        {
+            SYAssetItem *item = [[SYAssetItem alloc] initWithAsset:originalAsset andAssetLibrary:self->_assetLibrary];
+            [items addObject:item];
+        }
         
         ++count;
         if(count == [group numberOfAssets])
