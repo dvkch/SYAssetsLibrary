@@ -48,6 +48,14 @@
     return assetAtUrl;
 }
 
+-(BOOL)isEqual:(id)object
+{
+    if(!object || ![object isKindOfClass:[SYAssetItem class]])
+        return NO;
+    
+    return [[self itemURL] isEqual:[(SYAssetItem*)object itemURL]];
+}
+
 -(NSString*)filename
 {
     ALAsset *asset = [self itemReference];
