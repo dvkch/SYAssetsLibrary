@@ -102,19 +102,33 @@
 
 -(void)requestPermission:(void (^)(ALAuthorizationStatus))block
 {
+    SEL authStatus = @selector(authorizationStatus);
+    
+    if(![ALAssetsLibrary resolveClassMethod:authStatus])
+    {
+        if(block)
+            block(ALAuthorizationStatusAuthorized);
+        return;
+    }
+    
     ALAssetsLibrary* library = [[ALAssetsLibrary alloc] init];
     [library enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         *stop = YES;
         if(block)
-            block([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusAuthorized);
+            block([ALAssetsLibrary authorizationStatus]);
     } failureBlock:^(NSError *error) {
         if(block)
-            block([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusAuthorized);
+            block([ALAssetsLibrary authorizationStatus]);
     }];
 }
 
 -(BOOL)libraryAccessible
 {
+    SEL authStatus = @selector(authorizationStatus);
+    
+    if(![ALAssetsLibrary resolveClassMethod:authStatus])
+        return YES;
+    
     return [ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusAuthorized ||
            [ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusRestricted;
 }
