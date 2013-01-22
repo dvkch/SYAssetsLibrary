@@ -13,6 +13,12 @@
     NSURL *_url;
     ALAssetsLibrary *_assetLibrary;
     ALAsset *_asset;
+    
+    UIImage *_cachedThumbnail;
+    UIImage *_cachedFullScreenImage;
+    UIImage *_cachedFullResolutionImage;
+    NSDictionary *_cachedMetadata;
+    ALAssetRepresentation *_cachedDefaultRepresentation;
 }
 
 -(SYAssetItem*)initWithURL:(NSURL*)url andAssetLibrary:(ALAssetsLibrary*)assetLibrary;
@@ -22,5 +28,13 @@
 -(ALAsset*)itemReference;
 
 -(NSString*)filename;
+
+-(void)clearCachedImagesRepresentationsAndMetadata;
+
+-(NSDictionary*)metadata;
+-(UIImage*)thumbnail;
+-(UIImage*)fullScreenImage;
+-(UIImage*)fullResolutionImage;
+-(ALAssetRepresentation*)defaultRepresentation;
 
 @end
