@@ -103,7 +103,7 @@
     return self->_cachedThumbnail;
 }
 
--(UIImage*)fullscreenImage
+-(UIImage*)fullScreenImage
 {
     if(self->_cachedFullScreenImage)
         return self->_cachedFullScreenImage;
